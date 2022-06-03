@@ -8,9 +8,9 @@
 std::vector<char> getPerm(const Tree& tree, int n) {
   std::vector<char> conseq;
   std::string go_out = tree[n -1];
-  unsigned int shag = 0;
-  if (shag < out.size) {
-      while (shag < out.length()) {
+  int shag = 0;
+  if (shag < go_out.size) {
+      while (shag < go_out.length()) {
             conseq.push_back(go_out[shag]);
             shag++;
       }
