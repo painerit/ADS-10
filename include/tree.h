@@ -15,7 +15,7 @@ class Tree {
         Smena(root);
     }
 
-    std::string operator[](long n) const {
+    std::string operator[](int n) const {
         if (n >= modification.size()) {
             return "";
         }
@@ -39,10 +39,10 @@ class Tree {
                 vect.erase(pos);
             }
         }
-        for (long step = 0; step < vect.size(); step++) {
+        for (int step = 0; step < vect.size(); step++) {
             root->level.push_back(new Node);
         }
-        for (long step = 0; step < root->level.size(); ++step) {
+        for (int step = 0; step < root->level.size(); ++step) {
             root->level[step]->value = vect[step];
         }
         for (long step = 0; step < root->level.size(); ++step) {
