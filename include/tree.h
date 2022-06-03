@@ -45,7 +45,7 @@ class Tree {
         for (int step = 0; step < root->level.size(); ++step) {
             root->level[step]->value = vect[step];
         }
-        for (long step = 0; step < root->level.size(); ++step) {
+        for (unsigned int step = 0; step < root->level.size(); ++step) {
             Build_Tree(root->level[step], vect);
         }
     }
@@ -61,7 +61,7 @@ class Tree {
         if ('#' != root->value) {
             str += root->value;
         }
-        for (long int step = 0; step < root->level.size(); ++step) {
+        for (unsigned int step = 0; step < root->level.size(); ++step) {
             Smena(root->level[step], str);
         }
     }
