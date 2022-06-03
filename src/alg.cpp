@@ -6,12 +6,14 @@
 #include  "tree.h"
 
 std::vector<char> getPerm(const Tree& tree, int n) {
-  std::string go_out = tree[n -1];
   std::vector<char> conseq;
+  std::string go_out = tree[n -1];
   long shag = 0;
-  while (shag < out.size()) {
-      conseq.push_back(go_out[shag]);
-      shag++;
+  if (shag < out.size) {
+      while (shag < out.size()) {
+            conseq.push_back(go_out[shag]);
+            shag++;
+      }
   }
   return conseq;
 }
